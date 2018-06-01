@@ -1,0 +1,13 @@
+<article class="card">
+  <header class="card-header title is-5">
+    <strong>{{event.title}} </strong>
+  </header>
+  <section class="card-content">
+  {{event.description}}
+    <div class="tags has-addons">
+      <button class="button tag is-medium" (click)="vote()">Thumbs up</button>
+      <div class="tag is-primary is-medium">{{event.votes}}</div>
+    </div>
+  </section>
+  <footer class="card-footer">{{event.starts_at}}</footer>
+</article>
